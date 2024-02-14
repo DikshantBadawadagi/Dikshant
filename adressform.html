@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IIT Dholakpur</title>
+        <link rel="icon" type="image/png" href="IITb.png">
+    </head>
+    <body>
+     <header>
+        <h1 class="head">Adress Details</h1>
+     </header>
+<div class="maindiv">
+    <div class="student-add center container border">
+        <div clas="s-text"><h1>Current Adress</h1></div>
+        <div class="adress">
+            <div>
+            <div class="street1 mtop"><input type="text" class="userinput" id="userInputstreet1" name="userInput" placeholder="Street_Adress"></div>
+            <div class="street2 mtop"><input type="text" class="userinput" id="userInputstreet2" name="userInput" placeholder="Street_Adress line2"></div>
+        </div>
+         <div>
+            <div class="city-region center container mtop">
+                <div class="city mright"><input type="text" class="userinput" id="userInputcity" name="userInput" placeholder="City"></div>
+                <div class="region mright"><input type="text" class="userinput" id="userInputregion" name="userInput" placeholder="Region"></div>
+            </div>
+            <div class="zip-country center container mtop">
+                <div class="zip mright"><input type="text" class="userinput" id="userInputzip" name="userInput" placeholder="Zip"></div>
+                <div class="country mright"><input type="text" class="userinput" id="userInputcountry" name="userInput" placeholder="Country"></div>
+            </div>
+         </div>   
+        </div>
+    </div>
+    <div class="office-add center container border">
+        <div clas="s-text"><h1>Office Adress</h1></div>
+        <div class="off-adress">
+            <div>
+            <div class="off-street1 mtop"><input type="text" class="userinput" id="userInputoffstreet1" name="userInput" placeholder="Street_Adress"></div>
+            <div class="off-street2 mtop"><input type="text" class="userinput" id="userInputoffstreet2" name="userInput" placeholder="Street_Adress line2"></div>
+        </div>
+         <div>
+            <div class="off-city-region center container mtop">
+                <div class="off-city mright"><input type="text" class="userinput" id="userInputoffcity" name="userInput" placeholder="City"></div>
+                <div class="off-region mright"><input type="text" class="userinput" id="userInputoffregion" name="userInput" placeholder="Region"></div>
+            </div>
+            <div class="off-zip-country center container mtop">
+                <div class="off-zip mright"><input type="text" class="userinput" id="userInputoffzip" name="userInput" placeholder="Zip"></div>
+                <div class="off-country mright"><input type="text" class="userinput" id="userInputoffcountry" name="userInput" placeholder="Country"></div>
+            </div>
+         </div>   
+        </div>
+    </div>
+    <div class="guard-add center container border">
+        <div clas="s-text"><h1>Guardian Adress</h1></div>
+        <div class="guard-adress">
+            <div>
+            <div class="guard-street1 mtop"><input type="text" class="userinput" id="userInputguardstreet1" name="userInput" placeholder="Street_Adress"></div>
+            <div class="guard-street2 mtop"><input type="text" class="userinput" id="userInputguardstreet2" name="userInput" placeholder="Street_Adress line2"></div>
+        </div>
+         <div>
+            <div class="guard-city-region center container mtop">
+                <div class="guard-city mright"><input type="text" class="userinput" id="userInputguardcity" name="userInput" placeholder="City"></div>
+                <div class="guard-region mright"><input type="text" class="userinput" id="userInputguardregion" name="userInput" placeholder="Region"></div>
+            </div>
+            <div class="guard-zip-country center container mtop">
+                <div class="guard-zip mright"><input type="text" class="userinput" id="userInputguardzip" name="userInput" placeholder="Zip"></div>
+                <div class="guard-country mright"><input type="text" class="userinput" id="userInputguardcountry" name="userInput" placeholder="Country"></div>
+            </div>
+         </div>   
+        </div>
+    </div>
+</div>  
+<div class="container">
+    <button class="btn" id="submit">SUBMIT</button></div>   
+<style>
+    .container{
+        display: flex;
+    }  
+    .center{
+        align-items: center;
+        justify-content: space-between;
+     }
+     .mtop{
+        margin-top: 2vw;
+     }
+     .mright{
+        margin-right: 5vw;
+     }
+     .userinput{
+        width: 30vw;
+        font-size: 30px;
+     }
+     .border{
+            border: 2px solid #ffe4c4;
+        }
+      body{
+        height: 100vh;
+        background: linear-gradient(to bottom, #008080,#b87905);
+      }
+      .head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#ffe4c4;
+        }
+        .maindiv{
+        color: #ffe4c4;
+        margin-top: 5vw;
+      }
+      .btn{
+        margin-top: 1vw;
+        background-color: #a0a0a0;
+        color: #f5e3cc;
+         font-weight: bold;
+         font-family:Helvetica, sans-serif;
+         font-size: 30px;
+         margin-left: 50vw;
+        }
+ 
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+        var proceedButton = document.getElementById("submit");
+        proceedButton.addEventListener("click",function() {
+            
+            var streetad1 = document.getElementById("userInputstreet1");
+            var streetad2 = document.getElementById("userInputstreet2");
+            var city = document.getElementById("userInputcity");
+            var region = document.getElementById("userInputregion");
+            var zip = document.getElementById("userInputzip");
+            var country = document.getElementById("userInputcountry");
+            var addressDetails = {
+                Streetad1: streetad1.value,
+                Streetad2: streetad2.value,
+                City: city.value,
+                Region: region.value,
+                Zip: zip.value,
+                Country: country.value
+            };
+            console.table("Address of Student is: " + addressDetails);
+
+            var streetad1 = document.getElementById("userInputoffstreet1");
+            var streetad2 = document.getElementById("userInputoffstreet2");
+            var city = document.getElementById("userInputoffcity");
+            var region = document.getElementById("userInputoffregion");
+            var zip = document.getElementById("userInputoffzip");
+            var country = document.getElementById("userInputoffcountry");
+            var offaddressDetails = {
+                Streetad1: streetad1.value,
+                Streetad2: streetad2.value,
+                City: city.value,
+                Region: region.value,
+                Zip: zip.value,
+                Country: country.value
+            };
+            console.table("Address of Office is: " + offaddressDetails);
+
+            var streetad1 = document.getElementById("userInputguardstreet1");
+            var streetad2 = document.getElementById("userInputguardstreet2");
+            var city = document.getElementById("userInputguardcity");
+            var region = document.getElementById("userInputguardregion");
+            var zip = document.getElementById("userInputguardzip");
+            var country = document.getElementById("userInputguardcountry");
+            var guardaddressDetails = {
+                Streetad1: streetad1.value,
+                Streetad2: streetad2.value,
+                City: city.value,
+                Region: region.value,
+                Zip: zip.value,
+                Country: country.value
+            };
+            console.table("Address of Guardian is: "+ guardaddressDetails);
+            window.open("thankyou.html","_blank");}); }); 
+ </script>
+    </body>
+</html>

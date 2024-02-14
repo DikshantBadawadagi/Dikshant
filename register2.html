@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div  class="container-row center">
+        <div>
+       <div class="signup"><label>Sign-up</label></div>
+
+       <div class="container maindiv">
+        <div class="left">
+            <div class="padding"><label>first name</label></div>
+            <div class="padding"><label>Last name</label></div>
+            <div class="padding"><label>screen name</label></div>
+            <div class="padding"><label>date of brith</label></div>
+            <div class="padding"><label>gender</label></div>
+            <div class="padding"><label>country</label></div>
+            <div class="padding"><label>email</label></div>
+            <div class="padding"><label>phone</label></div>
+            <div class="padding"><label>password</label></div>
+            <div class="padding"><label>confirm password</label></div>
+        </div>
+        <div class="right">
+            <div><input type="text" placeholder="Enter firt name"></div>
+            <div><input type="text" placeholder="Enter last name"></div>
+            <div><input type="text" placeholder="Enter screen name"></div>
+            <div class="container">
+                <div class="padding-tb"><select name="month">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                </select></div>
+                <div class="padding-tb"><select name="day">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select></div>
+                <div class="padding-tb"><select name="year">
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                </select></div>
+            </div>
+            <div class="container padding"><div><input type="checkbox" class="cboxmale">
+            <label for="cboxmale">male</label></div>
+        <div><input type="checkbox" class="cboxfemale padding">
+        <label for="cboxfemale">female</label></div> 
+        </div>
+        <div><input type="text" clas="country" placeholder="usa"></div>
+        <div><input type="text" class="email" placeholder="email"></div>
+        <div><input type="number" class="phone" placeholder="phone"></div>
+        <div><input type="password" class="password"></div>
+        <div><input type="password" class="conpassword"></div>
+       </div>
+       </div>
+
+       <div>
+        <div class="container subcan">
+            <div><button>Submit</button></div>
+            <div><button>Cancel</button></div>
+        </div>
+       </div>
+    </div>
+</div>
+       <style>
+        .container{
+            display: flex;
+        }
+        
+        .container-row{
+            display: flex;
+            flex-direction: row;
+        }
+        input{
+            padding: 10px;
+        }
+        .padding{
+            padding: 10px;
+        }
+        .padding-tb{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .subcan,.signup{
+            background-color: rgb(255, 197, 8);
+        }
+        .maindiv{
+            background-color: rgb(4, 19, 37);
+            color: wheat;
+        }
+        .center{
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+            }
+       </style>
+    </body>
+</html>

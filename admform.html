@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IIT Dholakpur</title>
+        <link rel="icon" type="image/png" href="IITb.png">
+    </head>
+    <body>
+     <header>
+       <h1 class="head">STUDENT DETAILS</h1> 
+     </header>
+     <div class="maindiv">
+       <div class="mtop">
+        <div class="name center container">
+            <div class="s-text">
+                <h1>Student name :</h1>
+            </div>
+            <div class="input">
+                <div class="fname">
+            <input type="text" class="userinput" id="userInputfname" name="userInput" placeholder="First_name"></div>
+            <div class="lname">
+            <input type="text" class="userinput" id="userInputlname" name="userInput" placeholder="Last_name"></div>
+            </div>
+          </div> 
+        </div> 
+        <div class="mtop">
+            <div class="dob center container">
+                <div class="s-text">
+                    <h1>Date of Birth :</h1>
+                </div>
+                <div class="inputdob">
+                <input type="date" class="userinput" id="userInputdob" name="userInput" placeholder="dd/mm/yyyy"></div>
+            </div>
+        </div>   
+        <div class="mtop">
+            <div class="pname center container">
+                <div class="s-text">
+                    <h1>Parent name :</h1>
+                </div>
+                <div class="input">
+                    <div class="moname">
+                        <input type="text" class="userinput" id="userInputMOname" name="userInput" placeholder="Mother_name"></div>
+
+                    <div class="faname">
+                        <input type="text" class="userinput" id="userInputFAname" name="userInput" placeholder="Father_name"></div>
+  
+                </div>
+            </div>
+        </div>
+        <div class="mtop">
+            <div class="phone center container">
+                <div class="s-text">
+                    <h1>Phone No :</h1>
+                </div>
+                <div class="phno">
+                    <input type="tel" class="userinput" id="userInputphnumber" name="userInput" pattern="[0-9]{10}" maxlength="10" placeholder="Phone_Number"></div>
+                </div>
+            </div>
+        </div>
+        
+     </div>
+      <div class="container">
+        <button class="btn" id="proceed">PROCEED</button></div> 
+     <style>
+     .container{
+        display: flex;
+     }
+     .center{
+        align-items: center;
+        justify-content: space-between;
+     } 
+     .input{
+        display: flex;
+     }
+     .userinput{
+        height: 30px;
+        font-size: 20px;
+     }
+     .inputdob{
+        margin-right: 60vw;
+     }
+     .phno{
+        margin-right: 60vw;
+     }
+     .fname{
+        margin-right: 20vw;
+     }
+     
+     .lname{
+        margin-right: 10vw;
+     }
+     .moname{
+        margin-right: 20vw;
+     }
+     
+     .faname{
+        margin-right: 10vw;
+     }
+     .head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#ffe4c4;
+        }
+      .maindiv{
+        color: #ffe4c4;
+        margin-top: 5vw;
+      }  
+      .mtop{
+        margin-top: 5vw;
+      }
+      body{
+        height: 100vh;
+        background: linear-gradient(to bottom, #008080,#b87905);
+      }
+      .userinput{
+        width: 30vw;
+      }
+      .btn{
+        margin-top: 1vw;
+        background-color: #a0a0a0;
+        color: #f5e3cc;
+         font-weight: bold;
+         font-family:Helvetica, sans-serif;
+         font-size: 30px;
+         margin-left: 50vw;
+        }
+
+     </style>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var proceedButton = document.getElementById("proceed");
+        proceedButton.addEventListener("click",function() {
+            
+            var firstname = document.getElementById("userInputfname");
+            var lastname = document.getElementById("userInputlname");
+            var dob = document.getElementById("userInputdob");
+            var mothername = document.getElementById("userInputMOname");
+            var fathername = document.getElementById("userInputFAname");
+            var phone = document.getElementById("userInputphnumber");
+            var studentDetails = {
+                firstName: firstname.value,
+                lastName: lastname.value,
+                dateOfBirth: dob.value,
+                motherName: mothername.value,
+                fatherName: fathername.value,
+                phoneNumber: phone.value
+            };
+            console.table(studentDetails);
+            window.open("adressform.html","_blank");}); }); 
+     </script>
+    </body>
+</html>

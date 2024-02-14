@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>FORM Validation</h1>
+    </head>
+    <body>
+        <form>
+           <label>Name:</label>
+           <input type="text" required id="name">
+           <br>
+           <label>Date of Birth:</label>
+           <input type="date" required id="dob">
+           <br>
+           <label>Adress</label>
+           <input type="text" required id="adress">
+           <br>
+           <label>EmailID:</label>
+           <input type="text" required id="email">
+           <br>
+           <label>Contact:</label>
+           <input type="number" required id="contact"> 
+           <button onclick="return validation()">Submit</button>
+        </form>
+        <script>
+            function validation(){
+           var name = document.getElementById('name').value;
+           if(name == ""){
+            alert("name cant be empty");
+            return false
+           }
+           var email = document.getElementById('email').value;
+           if(!email.includes("@")){
+            alert("Email is invalid");
+           }
+           var phone = document.getElementById('contact').value;
+           if(phone.length !== 10){
+            alert("Enter valid phone number");
+           }
+            }
+        </script>
+    </body>
+</html>

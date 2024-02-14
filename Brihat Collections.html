@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brihat Collections</title>
+    <link rel="icon" type="image/x-icon" href="LOGOcirclefinal.ico">
+
+</head>
+<body>
+    <header class="container"style="padding: right 0;">
+        <nav class="navbar flex space-between ">
+            <div class="left flex item-center">
+              <div> <img class="logo spin" src="brihatco.png" alt="Spinning Wheel"/></div> 
+              <div class="ul"><ul class="navlist flex item-center justify-center uppercase semibold">
+                <li class="home">Home</li>
+                <li class="shirt">Shirts</li>
+                <li class="jacket">Jackets</li>
+                <li class="hoodie">Hoodies</li>
+                <li class="cargo">Cargos</li>
+                <li class="pant">Pants</li>
+            </ul></div>  
+            </div>
+            <div class="right flex item-center">
+                <input class="search" type="text" placeholder="Search for products or enter product code"/>
+                <div class="profile mx-2">Profile</div>
+                <div class="wishlist mx-2">Wishlist</div>
+                <div class="bag mx-2">Bag</div>
+            
+            </div>
+        </nav>
+    </header>
+    <section class="container section1" style="padding-right: 0;">
+        <img class="offer" src="offer.webp"/>
+        <img class="offer" src="offer.webp"/>
+    </section>
+    
+    <section  class="container section1 flex flex-wrap mul-op" style="padding-right: 0;">
+      <div class="flex">
+        <div><img class="itemimg" src="offer1.webp"/></div>
+        <div><img class="itemimg" src="offer1.webp"/></div>
+        <div><img class="itemimg" src="offer1.webp"/></div>
+        <div><img class="itemimg" src="offer1.webp"/></div>
+        <div><img class="itemimg" src="offer1.webp"/></div>
+        <div><img class="itemimg" src="offer1.webp"/></div>
+      </div>
+    </section>
+    <section  class="container section1 flex flex-wrap mul-op" style="padding-right: 0;">
+    <div class="flex">
+      <div><img class="itemimg" src="offer1.webp"/></div>
+      <div><img class="itemimg" src="offer1.webp"/></div>
+      <div><img class="itemimg" src="offer1.webp"/></div>
+      <div><img class="itemimg" src="offer1.webp"/></div>
+      <div><img class="itemimg" src="offer1.webp"/></div>
+      <div><img class="itemimg" src="offer1.webp"/></div>
+    </div>  
+    </section>
+    <footer class="my-2">
+      Copyright &copy; BrihatCollections.com | All rights reserved
+    </footer>
+    
+    <style>
+        html,body{
+            height:100%;
+            width:100%;
+        }
+        .flex{
+            display: flex;
+        }
+        .item-center{
+         align-items: center;
+        } 
+        .justify-center{
+          justify-content:center;
+        }
+        .left{
+           
+        }
+        .right{
+
+        }
+        nav{
+          
+        }
+        .my-2{
+          margin-top: 100%;
+        }
+        header{
+          position: sticky;
+           top:0;
+           background: white;
+           height: 100px;
+           box-shadow: rgba(0,0,0,0.1) 1.95px 1.95px 2.6px;
+          }
+          @media (max-width: 1550px){
+           header{
+            position: sticky;
+           top:0;
+           background: white;
+           height: 133px;
+           box-shadow: rgba(0,0,0,0.1) 1.95px 1.95px 2.6px;
+            width:-webkit-fill-available;
+           }
+           body{
+            width: 180vw;
+           }
+           nav{
+          flex-direction: column;
+          align-items: center;
+          
+              }
+              .right{
+                margin-left: 23px;
+              }
+           .search{
+           width:10%;
+              } 
+              nav ul li{
+            list-style: none;
+            padding: 0 2px;
+            
+        }
+        .offer{
+          margin-left: 2vw;
+        }
+        
+        .semibold{
+            font-weight: bold;
+        }
+        .logo{
+           margin-top:10px;
+           width:80px;
+           height:80px; 
+           margin-left: 74px;
+        }
+        
+
+             
+          }
+       
+        .logo{
+           margin-top:10px;
+           width:80px;
+           height:80px; 
+        }
+        .mul-op{
+
+        }
+        .offer{
+          width: 100%;
+          height: 100%;
+        }
+        .itemimg{
+          width:100%;
+          margin:6px 10px;
+        }
+        .mx-2{
+            margin-left:12px;
+            margin-right: 12px;
+        }
+        footer{
+          margin:12px 0;
+          padding:23px;
+          text-align:center;
+          box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;          
+        }
+        nav ul li{
+            list-style: none;
+            padding: 0 12px;
+            
+        }
+        .container{
+            
+            padding-right: 10vw;
+            margin:13px 0px;
+        }
+        .uppercase{
+            text-transform: uppercase;
+        }
+        .semibold{
+            font-weight: bolder;
+        }
+        .space-between{
+            justify-content: space-between;
+        }
+        .flex-wrap{
+          flex-wrap: wrap;
+        }
+        
+        .navlist{
+              
+        }
+        .search{
+          width:34vw;
+          padding: 7px 17px;
+          border:none;
+          background:rgb(248, 248, 248);
+          border-radius:10px;
+        }
+        .section1{
+          background-color: rgb(248, 248, 248);
+          margin-top:10px;
+          margin-right: 10vw;
+          margin-left: 10vw;
+        }
+       
+        
+.spin {
+    
+    position: relative;   
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.home {
+  
+  position: relative;
+  text-align: center;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home:after {
+ content: "HOME";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.8) 50%,
+    rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  animation: shine 5s infinite;
+}
+
+@keyframes shine{
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+.shirt {
+  
+  position: relative;
+  text-align: center;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shirt:after {
+ content: "HOME";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.8) 50%,
+    rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  animation: shine 5s infinite;
+}
+.jacket {
+  
+  position: relative;
+  text-align: center;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jacket:after {
+ content: "HOME";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.8) 50%,
+    rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  animation: shine 5s infinite;
+}
+.hoodie {
+  
+  position: relative;
+  text-align: center;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hoodie:after {
+ content: "HOME";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.8) 50%,
+    rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  animation: shine 5s infinite;
+}
+.pant {
+  
+  position: relative;
+  text-align: center;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pant:after {
+ content: "HOME";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.8) 50%,
+    rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  animation: shine 5s infinite;
+}
+.cargo {
+  
+  position: relative;
+  text-align: center;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cargo:after {
+ content: "HOME";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.8) 50%,
+    rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  animation: shine 5s infinite;
+}
+
+
+
+
+
+        
+    </style>
+    <script>
+
+    </script>
+</body>
+</html>
